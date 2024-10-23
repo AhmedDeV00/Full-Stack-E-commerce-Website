@@ -11,7 +11,7 @@ function Product() {
     const { id } = useParams();
 
     const OneProduct = async () => {
-        const { data } = await axios.get(`http://localhost:3001/product/${id}`);
+        const { data } = await axios.get(`https://full-stack-e-commerce-website-are8.onrender.com/product/${id}`);
         return data;
     };
 

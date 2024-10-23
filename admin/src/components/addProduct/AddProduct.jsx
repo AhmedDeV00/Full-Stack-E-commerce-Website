@@ -13,7 +13,7 @@ function AddProduct() {
         try {
             const formData = new FormData();
             formData.append("file", image)
-            const res = await axios.post("http://localhost:3001/api/upload", formData);
+            const res = await axios.post("https://full-stack-e-commerce-website-are8.onrender.com/api/upload", formData);
             return `upload/images/${res.data}`;
         } catch (error) {
             console.log(error);
@@ -38,7 +38,7 @@ function AddProduct() {
             let imgUrl = "";
             if (image) imgUrl = await upload();
             const newProductData = { ...productDetails, image: imgUrl };
-            const res = await axios.post("http://localhost:3001/addproduct", newProductData, {
+            const res = await axios.post("https://full-stack-e-commerce-website-are8.onrender.com/addproduct", newProductData, {
                 withCredentials: true,
             });
             console.log(res);

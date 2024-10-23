@@ -5,7 +5,7 @@ import { useQueryClient, useMutation, useQuery } from '@tanstack/react-query';
 import cross_icon from "../../assets/cross_icon.png";
 
 const fetchInfo = async () => {
-    const res = await axios.get("http://localhost:3001/allproducts", {
+    const res = await axios.get("https://full-stack-e-commerce-website-are8.onrender.com/allproducts", {
         withCredentials: true,
     });
 
@@ -20,7 +20,7 @@ function ListProduct() {
 
     /// To remove product
     const deleteProduct = async (id) => {
-        await axios.delete(`http://localhost:3001/removeproduct/${id}`, {
+        await axios.delete(`https://full-stack-e-commerce-website-are8.onrender.com/removeproduct/${id}`, {
             withCredentials: true,
         });
     };
@@ -51,7 +51,7 @@ function ListProduct() {
                 <hr />
                 {products.map(product => (
                     <div key={product._id} className="listproduct-format-main">
-                        <img src={`http://localhost:3001/${product.image}`} className='listproduct-product-icon' alt="" />
+                        <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${product.image}`} className='listproduct-product-icon' alt="" />
                         <p>{product.name}</p>
                         <p>${product.old_price}</p>
                         <p>${product.new_price}</p>

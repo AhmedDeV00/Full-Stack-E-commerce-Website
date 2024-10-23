@@ -15,13 +15,13 @@ function SingleProduct({ one_product }) {
         <div className='Singleproduct'>
             <div className="Singleproduct-left">
                 <div className="Singleproduct-img-list">
-                    <img src={`http://localhost:3001/${one_product.image}`} alt="" />
-                    <img src={`http://localhost:3001/${one_product.image}`} alt="" />
-                    <img src={`http://localhost:3001/${one_product.image}`} alt="" />
-                    <img src={`http://localhost:3001/${one_product.image}`} alt="" />
+                    <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${one_product.image}`} alt="" />
+                    <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${one_product.image}`} alt="" />
+                    <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${one_product.image}`} alt="" />
+                    <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${one_product.image}`} alt="" />
                 </div>
                 <div className="Singleone_product-img">
-                    <img src={`http://localhost:3001/${one_product.image}`} alt="" className="Singleproduct-main-img" />
+                    <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${one_product.image}`} alt="" className="Singleproduct-main-img" />
                 </div>
             </div>
             <div className="Singleproduct-right">
