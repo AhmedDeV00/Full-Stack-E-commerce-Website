@@ -51,7 +51,7 @@ function ListProduct() {
                 <hr />
                 {products.map(product => (
                     <div key={product._id} className="listproduct-format-main">
-                        <img src={`http://localhost:3001/${product.image}`} className='listproduct-product-icon' alt="" />
+                        <img src={`https://full-stack-e-commerce-website-are8.onrender.com/${product.image}`} className='listproduct-product-icon' alt="" />
                         <p>{product.name}</p>
                         <p>${product.old_price}</p>
                         <p>${product.new_price}</p>
