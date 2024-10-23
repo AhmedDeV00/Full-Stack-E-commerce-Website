@@ -10,7 +10,7 @@ export const AuthContextProvider = ({ children }) => {
 
     const login = async (formData) => {
         try {
-            const res = await axios.post("http://localhost:3001/login", formData, { withCredentials: true, });
+            const res = await axios.post("https://full-stack-e-commerce-website-are8.onrender.com/login", formData, { withCredentials: true, });
             const data = res.data;
             console.log(data);
             setCurrentUser(data)
