@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 // Enable CORS for all routes
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:5173'],  // Allow requests from this origin
+    origin: ['https://front-end-e-commerce-website.onrender.com', 'http://localhost:5173'],  // Allow requests from this origin
     credentials: true,
 }));
 app.use(cookieParser())
