@@ -22,7 +22,7 @@ function CartItems() {
                     return (
                         <div key={e._id}>
                             <div className="CartItems-format CartItems-format-main">
-                                <img className='CartIcon-product-icon' src={`http://localhost:3001/${e.image}`} alt="" />
+                                <img className='CartIcon-product-icon' src={`https://full-stack-e-commerce-website-are8.onrender.com/${e.image}`} alt="" />
                                 <p>{e.name}</p>
                                 <p>${e.new_price}</p>
                                 <button className='CartItems-quantity'>{quantity}</button>
