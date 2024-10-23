@@ -38,7 +38,7 @@ function AddProduct() {
             let imgUrl = "";
             if (image) imgUrl = await upload();
             const newProductData = { ...productDetails, image: imgUrl };
-            const res = await axios.post("http://localhost:3001/addproduct", newProductData, {
+            const res = await axios.post("https://full-stack-e-commerce-website-are8.onrender.com/addproduct", newProductData, {
                 withCredentials: true,
             });
             console.log(res);
