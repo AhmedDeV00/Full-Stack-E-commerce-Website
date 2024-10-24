@@ -23,7 +23,7 @@ const ShopContextProvider = ({ children }) => {
         });
         return res.data.products; // Returning the products array
     };
-
+    
     const { data: all_product = [], error, isLoading } = useQuery({
         queryKey: ['products'],  // Unique key for this query
         queryFn: fetchInfo,       // The function to fetch the products
