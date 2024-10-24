@@ -7,6 +7,8 @@ import db from "./connect.js";
 import productRoutes from "./routes/product.js"
 import authRoutes from "./routes/users.js"
 import cookieParser from "cookie-parser";
+import 'dotenv/config';
+
 
 
 // Get the directory name
@@ -14,6 +16,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
+const port = process.env.PORT;
+
+
 app.use(express.json());
 
 // mongodb connection
@@ -63,9 +68,9 @@ app.use("/", authRoutes)
 
 app.use(express.json());
 
-app.listen(3001, (error) => {
+app.listen(port, (error) => {
     if (!error) {
-        console.log("server is running ");
+        console.log("server is running:" + port);
     } else {
         console.log(error);
     }
